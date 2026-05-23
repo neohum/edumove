@@ -1,18 +1,43 @@
 #app {
     min-height: 100vh;
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem;
     box-sizing: border-box;
 }
 
 h1 {
     margin: 0.2rem 0 0;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 }
 
 .subtitle {
-    margin: 0.4rem 0 1.6rem;
+    margin: 0.3rem 0 1.2rem;
     opacity: 0.7;
+}
+
+.diag {
+    margin: 0 auto 1.2rem;
+    border-collapse: collapse;
+    font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
+    font-size: 0.85rem;
+}
+
+.diag td {
+    padding: 0.18rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.diag td:first-child {
+    opacity: 0.6;
+    text-align: right;
+}
+
+.diag td.yes { color: #7ee787; }
+.diag td.no { color: #ff7b72; }
+
+.controls {
+    margin-bottom: 1rem;
 }
 
 .btn {
@@ -32,37 +57,24 @@ h1 {
 
 .btn:disabled {
     cursor: default;
-    opacity: 0.6;
+    opacity: 0.5;
 }
 
-.result {
-    margin: 1.6rem auto 0;
-    max-width: 360px;
-    padding: 1rem;
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.06);
-}
-
-.result.ok .badge { color: #7ee787; }
-.result.fail .badge { color: #ff7b72; }
-
-.badge {
-    font-weight: 600;
-    margin-bottom: 0.8rem;
-}
-
-.landmark {
+.stage {
+    width: min(640px, 90vw);
+    aspect-ratio: 16 / 9;
     margin: 0 auto;
-    border-collapse: collapse;
-    font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
 }
 
-.landmark td {
-    padding: 0.2rem 1rem;
-    text-align: left;
+.cam {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.landmark td:first-child {
-    opacity: 0.6;
-    text-align: right;
-}
+.ok { color: #7ee787; margin-top: 1rem; }
+.fail { color: #ff7b72; margin-top: 1rem; }
