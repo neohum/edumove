@@ -1,0 +1,7 @@
+[mcp_servers.filesystem]
+args = [
+    "-y",
+    "@modelcontextprotocol/server-filesystem",
+    ".",
+]
+command = "npx"

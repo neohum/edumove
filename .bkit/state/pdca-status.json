@@ -1,0 +1,123 @@
+{
+  "version": "2.0",
+  "lastUpdated": "2026-05-23T01:32:34.449Z",
+  "activeFeatures": [
+    "sidecar",
+    "edumove",
+    "frontend"
+  ],
+  "primaryFeature": "sidecar",
+  "features": {
+    "sidecar": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-05-23T01:25:09.572Z",
+        "lastUpdated": "2026-05-23T01:25:28.523Z"
+      },
+      "lastFile": "E:\\works\\project\\edumove\\app\\sidecar\\pose_sidecar.py"
+    },
+    "edumove": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-05-23T01:26:07.809Z",
+        "lastUpdated": "2026-05-23T01:32:34.448Z"
+      },
+      "lastFile": "E:\\works\\project\\edumove\\app\\sidecar_test.go"
+    },
+    "frontend": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-05-23T01:29:30.045Z",
+        "lastUpdated": "2026-05-23T01:29:30.045Z"
+      },
+      "lastFile": "E:\\works\\project\\edumove\\app\\frontend\\src\\App.tsx"
+    }
+  },
+  "pipeline": {
+    "currentPhase": 1,
+    "level": "Dynamic",
+    "phaseHistory": []
+  },
+  "session": {
+    "startedAt": "2026-05-23T00:57:07.232Z",
+    "onboardingCompleted": false,
+    "lastActivity": "2026-05-23T01:32:34.449Z"
+  },
+  "history": [
+    {
+      "timestamp": "2026-05-23T01:25:09.572Z",
+      "feature": "sidecar",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-23T01:25:28.523Z",
+      "feature": "sidecar",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-23T01:26:07.809Z",
+      "feature": "edumove",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-23T01:27:02.873Z",
+      "feature": "edumove",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-23T01:27:09.592Z",
+      "feature": "edumove",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-23T01:27:38.257Z",
+      "feature": "edumove",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-23T01:28:08.739Z",
+      "feature": "edumove",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-23T01:28:39.596Z",
+      "feature": "edumove",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-23T01:29:30.045Z",
+      "feature": "frontend",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-05-23T01:32:34.448Z",
+      "feature": "edumove",
+      "phase": "do",
+      "action": "updated"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node scripts/*.mjs*)",
+      "Bash(claude -p *)",
+      "Bash(codex exec *)",
+      "Bash(gemini -p *)",
+      "Bash(gh *)",
+      "Bash(git status*)",
+      "Bash(git diff*)",
+      "Bash(git log*)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)"
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+#app {
+    min-height: 100vh;
+    text-align: center;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0.2rem 0 0;
+    font-size: 1.6rem;
+}
+
+.subtitle {
+    margin: 0.4rem 0 1.6rem;
+    opacity: 0.7;
+}
+
+.btn {
+    height: 40px;
+    line-height: 40px;
+    border-radius: 6px;
+    border: none;
+    padding: 0 18px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn:hover:not(:disabled) {
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    color: #333333;
+}
+
+.btn:disabled {
+    cursor: default;
+    opacity: 0.6;
+}
+
+.result {
+    margin: 1.6rem auto 0;
+    max-width: 360px;
+    padding: 1rem;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.result.ok .badge { color: #7ee787; }
+.result.fail .badge { color: #ff7b72; }
+
+.badge {
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+
+.landmark {
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
+}
+
+.landmark td {
+    padding: 0.2rem 1rem;
+    text-align: left;
+}
+
+.landmark td:first-child {
+    opacity: 0.6;
+    text-align: right;
+}
