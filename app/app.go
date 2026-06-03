@@ -3,6 +3,7 @@ package main
 import (
 	"context"
 	"fmt"
+	"github.com/wailsapp/wails/v2/pkg/runtime"
 )
 
 // App struct
@@ -19,6 +20,13 @@ func NewApp() *App {
 // so we can call the runtime methods
 func (a *App) startup(ctx context.Context) {
 	a.ctx = ctx
+	
+	// Listen for motion success events from the React frontend
+	runtime.EventsOn(ctx, "motion:success", func(optionalData ...interface{}) {
+		if len(optionalData) > 0 {
+			fmt.Printf("[Go Backend] Motion Success: %v\n", optionalData[0])
+		}
+	})
 }
 
 // Greet returns a greeting for the given name
